@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Signo</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body id="calcuSig">
+    <form id="formSig">
+        <h1>CALCULADORA DE SIGNO</h1>
+        <br><br/>
+
+        <label for="dia">informe o dia do seu nascimento: </label>
+        <input type="text" name="dia" id="dia"/>
+        <br/>
+
+        <label for="mes">Informe o seu mês do seu nascimento: </label>
+        <input type="text" name="mes" id="mes"/>
+        <br/>
+        
+        <label for="ano">Informe o ano do seu nascimento: </label>
+        <input type="text" name="ano" id="ano"/>
+        <br/><br>
+        
+        <label for="ano">Seu mes de nascimento foi: </label>
+        <input type="text" name="ano" id="ano" readonly/>
+        <br/>
+        
+        
+        <label for="ano">O dia da semana foi: </label>
+        <input type="text" name="ano" id="ano" readonly/>
+        <br/><br>
+        
+        
+        <tr>
+            <label for="ano">Seu signo</label>
+            <img src="./src/assets/images/vazio.png" name="signo" alt="">
+        </tr>
+
+        <input type="button" value="Calcular" onclick="calcular()">
+        <input type="reset" value="limpar" onclick="limpar()">
+
+    </form>
+    
+
+
+
+    <Script src="./src/js/script.js"></Script>
+</body>
+</html>
