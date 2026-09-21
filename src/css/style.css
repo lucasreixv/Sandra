@@ -73,35 +73,28 @@ body {
     color: #555;
 }
 
-#formSig img {
+#nomeSigno {
     display: block;
 
-    width: 150px;
-    height: 150px;
+    font-weight: bold;
+    color: #5b2bbf;
+    font-size: 18px;
 
-    object-fit: contain;
-
-    margin: 15px auto;
-
-    border-radius: 15px;
+    margin: 10px 0 5px;
 }
-
-Oculta a imagem sem remover o espaço reservado */
-#formSig img[src=""], 
-#formSig img:not([src]) {
-    visibility: hidden;
-}
-
 
 #formSig img {
     display: none; /* Inicia escondida */
+
     width: 150px;
     height: 150px;
+
     object-fit: contain;
+
     margin: 15px auto;
+
     border-radius: 15px;
 }
-
 
 #formSig input[type="button"],
 #formSig input[type="reset"] {
