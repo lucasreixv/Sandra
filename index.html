@@ -11,41 +11,48 @@
         <h1>CALCULADORA DE SIGNO</h1>
         <br><br/>
 
-        <label for="dia">informe o dia do seu nascimento: </label>
+        <label for="dia">Informe o dia do seu nascimento: </label>
         <input type="text" name="dia" id="dia"/>
         <br/>
 
-        <label for="mes">Informe o seu mês do seu nascimento: </label>
+        <label for="mes">Informe o mês do seu nascimento: </label>
         <input type="text" name="mes" id="mes"/>
         <br/>
         
         <label for="ano">Informe o ano do seu nascimento: </label>
         <input type="text" name="ano" id="ano"/>
         <br/><br>
-        
-        <label for="ano">Seu mes de nascimento foi: </label>
-        <input type="text" name="ano" id="ano" readonly/>
+
+        <label for="Idade">Sua idade é: </label>
+        <input type="text" id="Idade" readonly/>
         <br/>
         
+        <label for="mesnas">Seu mês de nascimento foi: </label>
+        <input type="text" id="mesnas" readonly/>
+        <br/>
         
-        <label for="ano">O dia da semana foi: </label>
-        <input type="text" name="ano" id="ano" readonly/>
+        <label for="txtsema">O dia da semana foi: </label>
+        <input type="text" id="txtsema" readonly/>
         <br/><br>
         
-        
-        <tr>
-            <label for="ano">Seu signo</label>
-            <img src="./src/assets/images/vazio.png" name="signo" alt="">
-        </tr>
+        <div id="mensagem" style="visibility: hidden;"></div>
+        <br/>
 
-        <input type="button" value="Calcular" onclick="calcular()">
-        <input type="reset" value="limpar" onclick="limpar()">
+        <div>
+            <label>Seu signo:</label>
+            <img src="" name="signo" id="imgSigno" alt="">
+        </div>
+
+        <br/>
+        <input type="button" value="Calcular" onclick="Calcular()">
+        <input type="reset" value="Limpar" onclick="limpar()">
+    
+        <div style="min-height: 150px; display: flex; align-items: center; justify-content: center;">
+            <img name="signo" src="" alt="">
+        </div>
 
     </form>
-    
 
-
-
-    <Script src="./src/js/script.js"></Script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
